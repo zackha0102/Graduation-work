@@ -82,7 +82,7 @@ main{padding-block:40px 72px}
   :root{--tabbar:64px}
   .nav-top{display:none}
   .tools{margin-left:auto}
-  .nav-tabs{display:grid;grid-template-columns:repeat(5,1fr);position:fixed;left:0;right:0;bottom:0;z-index:20;
+  .nav-tabs{display:grid;grid-template-columns:repeat(4,1fr);position:fixed;left:0;right:0;bottom:0;z-index:20;
     background:var(--surface);border-top:1px solid var(--line);
     padding-bottom:env(safe-area-inset-bottom,0px);padding-left:env(safe-area-inset-left,0px);padding-right:env(safe-area-inset-right,0px)}
   .nav-tabs a{height:64px;align-items:center;justify-content:center;gap:2px;font-size:12px;padding:0 2px;text-align:center}
