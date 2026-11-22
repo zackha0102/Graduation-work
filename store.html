@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>전시물 · 의념</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Gowun+Batang:wght@400;700&family=Nanum+Myeongjo:wght@700;800&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- 저장된 언어를 먼저 적용 (깜빡임 방지) -->
+  <script>try{var l=localStorage.getItem("lang");if(l){document.documentElement.setAttribute("data-lang",l);document.documentElement.lang=l}}catch(e){}</script>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="ring" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="currentColor"/><circle cx="12" cy="12" r="7.5" fill="none" stroke="#ece2cc" stroke-opacity=".25" stroke-width=".6"/><circle cx="12" cy="12" r="4" fill="#8c3124"/><circle cx="12" cy="12" r="1" fill="#ece2cc"/></symbol>
+</svg>
+
+<!-- ===== 헤더 (모든 페이지 공통) ===== -->
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html"><svg class="disc-icon"><use href="#ring"/></svg>의념 <small>意念</small></a>
+    <nav class="nav-top" aria-label="Main">
+        <a href="index.html"><span class="main"><span class="ko">홈</span><span class="en">Home</span></span><span class="sub"><span class="ko">의념</span><span class="en">Album</span></span></a>
+        <a href="webtoon.html"><span class="main"><span class="ko">사건 기록</span><span class="en">Case Files</span></span><span class="sub"><span class="ko">웹툰, 소설</span><span class="en">Webtoon, Novel</span></span></a>
+        <a href="staff.html"><span class="main"><span class="ko">임직원 소개</span><span class="en">Our People</span></span><span class="sub"><span class="ko">캐릭터</span><span class="en">Characters</span></span></a>
+        <a href="store.html" aria-current="page"><span class="main"><span class="ko">전시물</span><span class="en">Exhibits</span></span><span class="sub">&nbsp;</span></a>
+        <a href="guest.html"><span class="main"><span class="ko">그 외</span><span class="en">More</span></span><span class="sub">&nbsp;</span></a>
+    </nav>
+    <div class="tools">
+      <button class="tool" type="button" data-lang-toggle><span class="ko">EN</span><span class="en">KO</span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== 본문 ===== -->
+<main>
+  <div class="wrap">
+
+    <div class="page-head">
+      <span class="mono eyebrow">EXHIBITS</span>
+      <h2><span class="ko">전시물</span><span class="en">Exhibits</span></h2>
+      <p><span class="ko">전시장에서 만날 수 있는 굿즈와 전시물입니다.</span><span class="en">Goods and pieces you can find at the venue.</span></p>
+    </div>
+
+    <div class="items">
+      <!-- ===== 아크릴 스탠드 ===== -->
+      <button class="item" type="button" data-open="g-stand">
+        <img class="img" src="images/goods/stand-lee-seo-hyeon.png" alt="Acrylic Stands" loading="lazy">
+        <h4><span class="ko">아크릴 스탠드</span><span class="en">Acrylic Stands</span></h4><p><span class="ko">3종</span><span class="en">3 designs</span></p>
+        <span class="more mono"><span class="ko">전체 보기</span><span class="en">View all</span> (3) →</span>
+      </button>
+      <template id="g-stand">
+        <h3><span class="ko">아크릴 스탠드</span><span class="en">Acrylic Stands</span></h3>
+        <div class="setgrid" style="--n:3">
+            <figure><img class="img" src="images/goods/stand-lee-seo-hyeon.png" alt="Lee Seo Hyeon"><figcaption><span class="ko">이서현</span><span class="en">Lee Seo Hyeon</span></figcaption></figure>
+            <figure><img class="img" src="images/goods/stand-do-hyeon.png" alt="Do Hyeon"><figcaption><span class="ko">도현</span><span class="en">Do Hyeon</span></figcaption></figure>
+            <figure><img class="img" src="images/goods/stand-han-ji-seon.png" alt="Han Ji Seon"><figcaption><span class="ko">한지선<small>등신대도 같은 일러스트를 사용했어요</small></span><span class="en">Han Ji Seon<small>The life-size standee uses the same illustration</small></span></figcaption></figure>
+        </div>
+      </template>
+      <!-- ===== 아크릴 키링 ===== -->
+      <button class="item" type="button" data-open="g-keyring">
+        <img class="img" src="images/goods/keyring-lee-seo-hyeon.png" alt="Acrylic Keyrings" loading="lazy">
+        <h4><span class="ko">아크릴 키링</span><span class="en">Acrylic Keyrings</span></h4><p><span class="ko">5종</span><span class="en">5 designs</span></p>
+        <span class="more mono"><span class="ko">전체 보기</span><span class="en">View all</span> (5) →</span>
+      </button>
+      <template id="g-keyring">
+        <h3><span class="ko">아크릴 키링</span><span class="en">Acrylic Keyrings</span></h3>
+        <div class="setgrid" style="--n:5">
+            <figure><img class="img" src="images/goods/keyring-lee-seo-hyeon.png" alt="Lee Seo Hyeon"><figcaption><span class="ko">이서현</span><span class="en">Lee Seo Hyeon</span></figcaption></figure>
+            <figure><img class="img" src="images/goods/keyring-do-hyeon.png" alt="Do Hyeon"><figcaption><span class="ko">도현</span><span class="en">Do Hyeon</span></figcaption></figure>
+            <figure><img class="img" src="images/goods/keyring-han-ji-seon.png" alt="Han Ji Seon"><figcaption><span class="ko">한지선</span><span class="en">Han Ji Seon</span></figcaption></figure>
+            <figure><img class="img" src="images/goods/keyring-lee-seo-jin.png" alt="Lee Seo Jin"><figcaption><span class="ko">이서진</span><span class="en">Lee Seo Jin</span></figcaption></figure>
+            <figure><img class="img" src="images/goods/keyring-kang-yu-jin.png" alt="Kang Yu Jin"><figcaption><span class="ko">강유진</span><span class="en">Kang Yu Jin</span></figcaption></figure>
+        </div>
+      </template>
+      <!-- ===== 사원증 ===== -->
+      <button class="item" type="button" data-open="g-idcard">
+        <img class="img" src="images/id/lee-seo-hyeon.png" alt="Employee ID Cards" loading="lazy">
+        <h4><span class="ko">사원증</span><span class="en">Employee ID Cards</span></h4><p><span class="ko">VEREN 사원증 3종</span><span class="en">3 VEREN staff IDs</span></p>
+        <span class="more mono"><span class="ko">전체 보기</span><span class="en">View all</span> (3) →</span>
+      </button>
+      <template id="g-idcard">
+        <h3><span class="ko">사원증</span><span class="en">Employee ID Cards</span></h3>
+        <div class="setgrid" style="--n:3">
+            <figure><img class="img" src="images/id/lee-seo-hyeon.png" alt="Lee Seo Hyeon"><figcaption><span class="ko">이서현</span><span class="en">Lee Seo Hyeon</span></figcaption></figure>
+            <figure><img class="img" src="images/id/do-hyeon.png" alt="Do Hyeon"><figcaption><span class="ko">도현</span><span class="en">Do Hyeon</span></figcaption></figure>
+            <figure><img class="img" src="images/id/han-ji-seon.png" alt="Han Ji Seon"><figcaption><span class="ko">한지선</span><span class="en">Han Ji Seon</span></figcaption></figure>
+        </div>
+      </template>
+      <!-- ===== 명함 ===== -->
+      <button class="item" type="button" data-open="g-card">
+        <img class="img" src="images/works/card-front.jpg" alt="Business Card" loading="lazy">
+        <h4><span class="ko">명함</span><span class="en">Business Card</span></h4><p><span class="ko">앞면 · 뒷면</span><span class="en">Front · Back</span></p>
+        <span class="more mono"><span class="ko">전체 보기</span><span class="en">View all</span> (2) →</span>
+      </button>
+      <template id="g-card">
+        <h3><span class="ko">명함</span><span class="en">Business Card</span></h3>
+        <div class="setgrid" style="--n:2">
+            <figure><img class="img" src="images/works/card-front.jpg" alt="Front"><figcaption><span class="ko">앞면</span><span class="en">Front</span></figcaption></figure>
+            <figure><img class="img" src="images/works/card-back.jpg" alt="Back"><figcaption><span class="ko">뒷면</span><span class="en">Back</span></figcaption></figure>
+        </div>
+      </template>
+      <!-- ===== 현수막 ===== -->
+      <button class="item" type="button" data-open="g-banner">
+        <img class="img" src="images/works/banner.jpg" alt="Banner" loading="lazy">
+        <h4><span class="ko">현수막</span><span class="en">Banner</span></h4>
+        <span class="more mono"><span class="ko">크게 보기</span><span class="en">View large</span> →</span>
+      </button>
+      <template id="g-banner">
+        <h3><span class="ko">현수막</span><span class="en">Banner</span></h3>
+        <div class="setgrid single" style="--n:1">
+            <figure><img class="img" src="images/works/banner.jpg" alt="Banner"></figure>
+        </div>
+      </template>
+      <!-- ===== 포스터 ===== -->
+      <button class="item" type="button" data-open="g-poster">
+        <img class="img" src="images/works/poster.jpg" alt="Poster" loading="lazy">
+        <h4><span class="ko">포스터</span><span class="en">Poster</span></h4>
+        <span class="more mono"><span class="ko">크게 보기</span><span class="en">View large</span> →</span>
+      </button>
+      <template id="g-poster">
+        <h3><span class="ko">포스터</span><span class="en">Poster</span></h3>
+        <div class="setgrid single" style="--n:1">
+            <figure><img class="img" src="images/works/poster.jpg" alt="Poster"></figure>
+        </div>
+      </template>
+      <!-- ===== 배너 ===== -->
+      <button class="item" type="button" data-open="g-standing">
+        <img class="img" src="images/works/standing-banner.jpg" alt="Standing Banner" loading="lazy">
+        <h4><span class="ko">배너</span><span class="en">Standing Banner</span></h4>
+        <span class="more mono"><span class="ko">크게 보기</span><span class="en">View large</span> →</span>
+      </button>
+      <template id="g-standing">
+        <h3><span class="ko">배너</span><span class="en">Standing Banner</span></h3>
+        <div class="setgrid single" style="--n:1">
+            <figure><img class="img" src="images/works/standing-banner.jpg" alt="Standing Banner"></figure>
+        </div>
+      </template>
+    </div>
+
+  </div>
+</main>
+
+<!-- ===== 하단 (모든 페이지 공통) ===== -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <p><span class="ko">신라대학교 웹툰학과 2026 졸업전시 · 《의념》 하재형</span><span class="en">Silla University, Dept. of Webtoon · 2026 Graduation Exhibition · EUINYEOM by Ha Jae Hyeong</span></p>
+      <p><span class="ko">VEREN은 작품 속 가상의 기업입니다.</span><span class="en">VEREN is a fictional company within the story.</span></p>
+    </div>
+  </div>
+</footer>
+
+<!-- 휴대폰 하단 메뉴 -->
+<nav class="nav-tabs" aria-label="Main">
+        <a href="index.html"><span class="main"><span class="ko">홈</span><span class="en">Home</span></span><span class="sub"><span class="ko">의념</span><span class="en">Album</span></span></a>
+        <a href="webtoon.html"><span class="main"><span class="ko">사건 기록</span><span class="en">Case Files</span></span><span class="sub"><span class="ko">웹툰, 소설</span><span class="en">Webtoon, Novel</span></span></a>
+        <a href="staff.html"><span class="main"><span class="ko">임직원 소개</span><span class="en">Our People</span></span><span class="sub"><span class="ko">캐릭터</span><span class="en">Characters</span></span></a>
+        <a href="store.html" aria-current="page"><span class="main"><span class="ko">전시물</span><span class="en">Exhibits</span></span><span class="sub">&nbsp;</span></a>
+        <a href="guest.html"><span class="main"><span class="ko">그 외</span><span class="en">More</span></span><span class="sub">&nbsp;</span></a>
+</nav>
+
+<!-- 팝업 창 틀 (내용은 각 항목의 <template>에서 가져옴) -->
+<div class="modal" id="popup" hidden role="dialog" aria-modal="true">
+  <div class="modal-box wide">
+    <div class="modal-head"><span class="logo"><svg class="disc-icon"><use href="#ring"/></svg>EXHIBITS</span><button class="x" type="button"><span class="ko">닫기</span><span class="en">Close</span></button></div>
+    <div class="modal-body"></div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

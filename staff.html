@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>임직원 소개 · 의념</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Gowun+Batang:wght@400;700&family=Nanum+Myeongjo:wght@700;800&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- 저장된 언어를 먼저 적용 (깜빡임 방지) -->
+  <script>try{var l=localStorage.getItem("lang");if(l){document.documentElement.setAttribute("data-lang",l);document.documentElement.lang=l}}catch(e){}</script>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="ring" viewBox="0 0 24 24"><circle cx="12" cy="12" r="11" fill="currentColor"/><circle cx="12" cy="12" r="7.5" fill="none" stroke="#ece2cc" stroke-opacity=".25" stroke-width=".6"/><circle cx="12" cy="12" r="4" fill="#8c3124"/><circle cx="12" cy="12" r="1" fill="#ece2cc"/></symbol>
+</svg>
+
+<!-- ===== 헤더 (모든 페이지 공통) ===== -->
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html"><svg class="disc-icon"><use href="#ring"/></svg>의념 <small>意念</small></a>
+    <nav class="nav-top" aria-label="Main">
+        <a href="index.html"><span class="main"><span class="ko">홈</span><span class="en">Home</span></span><span class="sub"><span class="ko">의념</span><span class="en">Album</span></span></a>
+        <a href="webtoon.html"><span class="main"><span class="ko">사건 기록</span><span class="en">Case Files</span></span><span class="sub"><span class="ko">웹툰, 소설</span><span class="en">Webtoon, Novel</span></span></a>
+        <a href="staff.html" aria-current="page"><span class="main"><span class="ko">임직원 소개</span><span class="en">Our People</span></span><span class="sub"><span class="ko">캐릭터</span><span class="en">Characters</span></span></a>
+        <a href="store.html"><span class="main"><span class="ko">전시물</span><span class="en">Exhibits</span></span><span class="sub">&nbsp;</span></a>
+        <a href="guest.html"><span class="main"><span class="ko">그 외</span><span class="en">More</span></span><span class="sub">&nbsp;</span></a>
+    </nav>
+    <div class="tools">
+      <button class="tool" type="button" data-lang-toggle><span class="ko">EN</span><span class="en">KO</span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== 본문 ===== -->
+<main>
+  <div class="wrap">
+
+    <div class="page-head">
+      <span class="mono eyebrow">PEOPLE</span>
+      <h2><span class="ko">임직원 소개</span><span class="en">Our People</span></h2>
+      <p><span class="ko">《의념》의 등장인물. 이 페이지에는 웹툰의 주요 내용이 포함되어 있습니다.</span><span class="en">The characters of EUINYEOM. This page contains major story details.</span></p>
+    </div>
+    <div class="staff">
+      <!-- ===== 이서현 ===== -->
+      <button class="person" type="button" data-open="p-lee-seo-hyeon">
+        <span class="photo-wrap"><img class="photo" src="images/people/lee-seo-hyeon.jpg" alt="Lee Seo Hyeon" loading="lazy"><span class="mono tag">Lee Seo Hyeon</span></span>
+        <span class="name">이서현</span>
+      </button>
+      <template id="p-lee-seo-hyeon">
+        <div class="detail-person">
+          <img class="photo" src="images/people/lee-seo-hyeon.jpg" alt="Lee Seo Hyeon">
+          <div>
+            <h3>이서현</h3>
+            <div class="en-name mono">Lee Seo Hyeon</div>
+            <p><span class="ko">VEREN 소속 신입 조사관이다.<br>이틀간의 교육을 마치고 곧바로 현장에 투입됐다.<br>아직 서툴러 사인을 틀리기도 하지만, 그 대가를 치르면서도 끝까지 답을 찾아내는 인물이다.<br>알을 조사하던 중 언니의 알을 마주하게 되고, 그 안에서 자신의 기억이 지워져 있었다는 사실을 알게 된다.</span><span class="en">A rookie investigator at VEREN, sent straight into the field after two days of training. She is still clumsy and sometimes gets the cause of death wrong, but even while paying the price for it, she keeps going until she finds the answer. While investigating the eggs, she comes face to face with her sister's egg, and learns inside it that her own memories had been erased.</span></p>
+          </div>
+        </div>
+      </template>
+      <!-- ===== 도현 ===== -->
+      <button class="person" type="button" data-open="p-do-hyeon">
+        <span class="photo-wrap"><img class="photo" src="images/people/do-hyeon.jpg" alt="Do Hyeon" loading="lazy"><span class="mono tag">Do Hyeon</span></span>
+        <span class="name">도현</span>
+      </button>
+      <template id="p-do-hyeon">
+        <div class="detail-person">
+          <img class="photo" src="images/people/do-hyeon.jpg" alt="Do Hyeon">
+          <div>
+            <h3>도현</h3>
+            <div class="en-name mono">Do Hyeon</div>
+            <p><span class="ko">이서현의 파트너이자 베테랑 조사관이다.<br>오른팔은 의수이며, 그 의수를 달아준 사람은 한지선이다.<br>말수가 적고 무뚝뚝해 무엇이든 가르쳐주기보다 직접 겪게 하는 편이다.<br>그러나 신입이 쓰러지면 끝까지 곁에서 기다려주는 사람이기도 하다.</span><span class="en">Seo Hyeon's partner and a veteran investigator. His right arm is a prosthetic, and the one who gave it to him was Han Ji Seon. Quiet and blunt, he would rather let a rookie learn by going through it than explain. But when a rookie collapses, he is also the one who waits beside them to the end.</span></p>
+          </div>
+        </div>
+      </template>
+      <!-- ===== 한지선 ===== -->
+      <button class="person" type="button" data-open="p-han-ji-seon">
+        <span class="photo-wrap"><img class="photo" src="images/people/han-ji-seon.jpg" alt="Han Ji Seon" loading="lazy"><span class="mono tag">Han Ji Seon</span></span>
+        <span class="name">한지선</span>
+      </button>
+      <template id="p-han-ji-seon">
+        <div class="detail-person">
+          <img class="photo" src="images/people/han-ji-seon.jpg" alt="Han Ji Seon">
+          <div>
+            <h3>한지선</h3>
+            <div class="en-name mono">Han Ji Seon</div>
+            <p><span class="ko">VEREN의 대표이자 살인율 0의 도시를 만든 인물이다.<br>왼손 검지에 늘 끼고 있는 오래된 은반지는 어린 시절 유일하게 믿었던 교수에게서 받은 것으로, 그녀는 그를 아버지처럼 따랐다.<br>그러나 그가 총격 사건으로 세상을 떠난 뒤 그녀는 완전히 달라졌다.<br>사람은 변하지 않는다고 믿게 된 그녀는 범죄자로부터 '의념'을 꺼내 '알'로 만드는 길을 택했다.<br>외전 《반지》의 주인공이다.</span><span class="en">The head of VEREN and the person who built a city with a murder rate of zero. The old silver ring she always wears on her left index finger was given to her by a professor, the only person she trusted as a child, and she looked up to him like a father. But after he was killed in a shooting, she changed completely. Having come to believe that people do not change, she chose to draw the 'euinyeom' out of criminals and turn them into 'eggs.' She is the protagonist of the side story The Ring.</span></p>
+          </div>
+        </div>
+      </template>
+      <!-- ===== 이서진 ===== -->
+      <button class="person" type="button" data-open="p-lee-seo-jin">
+        <span class="photo-wrap"><img class="photo" src="images/people/lee-seo-jin.jpg" alt="Lee Seo Jin" loading="lazy"><span class="mono tag">Lee Seo Jin</span></span>
+        <span class="name">이서진</span>
+      </button>
+      <template id="p-lee-seo-jin">
+        <div class="detail-person">
+          <img class="photo" src="images/people/lee-seo-jin.jpg" alt="Lee Seo Jin">
+          <div>
+            <h3>이서진</h3>
+            <div class="en-name mono">Lee Seo Jin</div>
+            <p><span class="ko">이서현의 언니이자 VEREN 직원이다.<br>동생에게는 장난스럽고 다정한 언니였다.<br>회사의 비밀을 알고도 싸움이 두려워 오랫동안 침묵했으나, 동생의 한마디에 진실을 말하기로 마음먹는다.<br>그러나 그 말은 끝내 세상에 닿지 못했다.</span><span class="en">Seo Hyeon's older sister and a VEREN employee. To her younger sister, she was playful and kind. She knew the company's secret but stayed silent for a long time, afraid of the fight, until a single word from her sister made her decide to tell the truth. But those words never reached the world.</span></p>
+          </div>
+        </div>
+      </template>
+      <!-- ===== 강유진 ===== -->
+      <button class="person" type="button" data-open="p-kang-yu-jin">
+        <span class="photo-wrap"><img class="photo" src="images/people/kang-yu-jin.jpg" alt="Kang Yu Jin" loading="lazy"><span class="mono tag">Kang Yu Jin</span></span>
+        <span class="name">강유진 <span class="note"><span class="ko">(비서)</span><span class="en">(Secretary)</span></span></span>
+      </button>
+      <template id="p-kang-yu-jin">
+        <div class="detail-person">
+          <img class="photo" src="images/people/kang-yu-jin.jpg" alt="Kang Yu Jin">
+          <div>
+            <h3>강유진 <span class="note"><span class="ko">(비서)</span><span class="en">(Secretary)</span></span></h3>
+            <div class="en-name mono">Kang Yu Jin</div>
+            <p><span class="ko">한지선의 비서다.<br>매일 같은 시간에 보고를 올리고, 어떤 지시에도 토를 달지 않는다.<br>무엇을 알고 있는지 겉으로 드러내지 않는 인물로, 한지선이 말하는 '아무것도 하지 않는 사람'에 가장 가까운 존재다.</span><span class="en">Han Ji Seon's secretary. She delivers her report at the same time every day and never questions an order. She never lets on what she knows, and she is the closest thing to what Han Ji Seon calls 'the one who does nothing.'</span></p>
+          </div>
+        </div>
+      </template>
+    </div>
+
+  </div>
+</main>
+
+<!-- ===== 하단 (모든 페이지 공통) ===== -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <p><span class="ko">신라대학교 웹툰학과 2026 졸업전시 · 《의념》 하재형</span><span class="en">Silla University, Dept. of Webtoon · 2026 Graduation Exhibition · EUINYEOM by Ha Jae Hyeong</span></p>
+      <p><span class="ko">VEREN은 작품 속 가상의 기업입니다.</span><span class="en">VEREN is a fictional company within the story.</span></p>
+    </div>
+  </div>
+</footer>
+
+<!-- 휴대폰 하단 메뉴 -->
+<nav class="nav-tabs" aria-label="Main">
+        <a href="index.html"><span class="main"><span class="ko">홈</span><span class="en">Home</span></span><span class="sub"><span class="ko">의념</span><span class="en">Album</span></span></a>
+        <a href="webtoon.html"><span class="main"><span class="ko">사건 기록</span><span class="en">Case Files</span></span><span class="sub"><span class="ko">웹툰, 소설</span><span class="en">Webtoon, Novel</span></span></a>
+        <a href="staff.html" aria-current="page"><span class="main"><span class="ko">임직원 소개</span><span class="en">Our People</span></span><span class="sub"><span class="ko">캐릭터</span><span class="en">Characters</span></span></a>
+        <a href="store.html"><span class="main"><span class="ko">전시물</span><span class="en">Exhibits</span></span><span class="sub">&nbsp;</span></a>
+        <a href="guest.html"><span class="main"><span class="ko">그 외</span><span class="en">More</span></span><span class="sub">&nbsp;</span></a>
+</nav>
+
+<!-- 팝업 창 틀 (내용은 각 항목의 <template>에서 가져옴) -->
+<div class="modal" id="popup" hidden role="dialog" aria-modal="true">
+  <div class="modal-box mid">
+    <div class="modal-head"><span class="logo"><svg class="disc-icon"><use href="#ring"/></svg>VEREN</span><button class="x" type="button"><span class="ko">닫기</span><span class="en">Close</span></button></div>
+    <div class="modal-body"></div>
+  </div>
+</div>
+
+<!-- 스포일러 안내 (이 페이지에 들어올 때마다 뜸) -->
+<div class="modal" id="spoiler" hidden role="dialog" aria-modal="true" aria-labelledby="spoilerH">
+  <div class="modal-box">
+    <div class="modal-head"><span class="logo"><svg class="disc-icon"><use href="#ring"/></svg>VEREN</span><span class="mono"><span class="ko">열람 안내</span><span class="en">NOTICE</span></span></div>
+    <div class="modal-body">
+      <h3 id="spoilerH"><span class="ko">웹툰을 먼저 보시길 권합니다</span><span class="en">We recommend reading the webtoon first</span></h3>
+      <p><span class="ko">이 페이지에는 웹툰 《의념》의 주요 내용이 포함되어 있습니다. 결말을 모르고 읽고 싶다면 웹툰을 먼저 보신 뒤 열람해 주세요.</span><span class="en">This page contains major story details from EUINYEOM. If you want to go in fresh, please read the webtoon first.</span></p>
+    </div>
+    <div class="modal-acts">
+      <a class="btn ghost" href="webtoon.html"><span class="ko">웹툰 먼저 보기</span><span class="en">Read the webtoon</span></a>
+      <button class="btn" id="spoilerOpen" type="button"><span class="ko">열람하기</span><span class="en">Continue</span></button>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
