@@ -2,6 +2,7 @@
    책 넘기기 동작 (글콘티 0화 《반지》 전용)
    - 컴퓨터: 책 왼쪽/오른쪽 누르기, 키보드 ← →
    - 휴대폰: 손가락으로 밀기, 아래 ‹ › 버튼
+   - 공통: 아래 바를 끌어서 원하는 쪽으로 이동
    보통은 이 파일을 고칠 필요가 없습니다.
    ========================================================= */
 (function(){
@@ -10,7 +11,7 @@
   var vp = book.querySelector(".book-viewport");
   var flow = book.querySelector(".book-flow");
   var count = document.querySelector(".book-count");
-  var bar = document.querySelector(".book-progress span");
+  var slider = document.querySelector(".book-slider");
   var btnPrev = document.querySelector("[data-book-prev]");
   var btnNext = document.querySelector("[data-book-next]");
   var KEY = "ring-progress";
@@ -26,7 +27,7 @@
 
     var headerBottom = document.querySelector(".site-header").getBoundingClientRect().bottom;
     var top = document.querySelector(".book-top").offsetHeight + 12;
-    var ctrl = document.querySelector(".book-ctrl").offsetHeight + 12 + 12;
+    var ctrl = document.querySelector(".book-ctrl").offsetHeight + 12 + 12 + (slider ? slider.offsetHeight + 10 : 0);
     var tabs = desktop ? 0 : (document.querySelector(".nav-tabs").offsetHeight || 0);
     var avail = book.clientWidth;
 
@@ -66,7 +67,11 @@
       ? (index + 1) + "–" + Math.min(index + 2, total)
       : String(index + 1);
     count.textContent = shown + " / " + total;
-    bar.style.width = (Math.min(index + perView, total) / total * 100) + "%";
+    if (slider) {
+      slider.max = String(Math.max(0, Math.ceil(total / perView) - 1));
+      slider.value = String(Math.round(index / perView));
+      slider.style.setProperty("--fill", (slider.max > 0 ? slider.value / slider.max * 100 : 100) + "%");
+    }
     btnPrev.disabled = index <= 0;
     btnNext.disabled = index >= last;
     if (!silent) { try { localStorage.setItem(KEY, String(index / total)); } catch(e){} }
@@ -76,6 +81,9 @@
 
   btnPrev.addEventListener("click", prev);
   btnNext.addEventListener("click", next);
+  if (slider) {
+    slider.addEventListener("input", function(){ go(parseInt(slider.value, 10) * perView); });
+  }
   book.querySelector(".book-hit.prev").addEventListener("click", prev);
   book.querySelector(".book-hit.next").addEventListener("click", next);
 
