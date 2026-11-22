@@ -1,0 +1,48 @@
+/* =========================================================
+   책 넘기기 화면 (글콘티 0화 《반지》 전용)
+   컴퓨터: 두 페이지 펼침 / 휴대폰: 한 페이지
+   ========================================================= */
+
+/* 책 읽는 페이지에서는 하단 문구를 숨겨 화면을 책에 집중 */
+body.reading .site-footer{display:none}
+body.reading main{padding-block:16px 12px}
+
+.book-top{display:flex;align-items:center;gap:12px;margin-bottom:12px;flex-wrap:wrap}
+.book-top h2{font-family:var(--f-title);font-size:20px;font-weight:800}
+
+/* ---------- 책 ---------- */
+.book{position:relative;display:flex;justify-content:center}
+.book-viewport{position:relative;overflow:hidden;background:var(--surface);border:1px solid var(--line);border-radius:4px;
+  padding:var(--pad-y,40px) var(--pad-x,40px);box-sizing:content-box}
+/* 컴퓨터: 가운데 접히는 선 */
+.book.spread .book-viewport::after{content:"";position:absolute;top:0;bottom:0;left:50%;width:1px;background:var(--line);
+  box-shadow:0 0 18px 6px rgba(0,0,0,.05);pointer-events:none}
+
+/* 글이 실제로 흘러가는 판. 페이지(단) 단위로 오른쪽으로 이어집니다 */
+.book-flow{height:var(--page-h);column-width:var(--page-w);column-gap:var(--gap);column-fill:auto;
+  width:var(--flow-w);font-family:var(--f-body);font-size:16.5px;line-height:1.95;
+  word-break:keep-all;overflow-wrap:break-word;transition:transform .35s ease;will-change:transform}
+.book-flow p{margin:0 0 1em;orphans:2;widows:2}
+.book-flow .notice{color:var(--muted);border:1px solid var(--line);padding:8px 12px;border-radius:4px;font-size:13px}
+
+/* ---------- 삽화: 한 페이지를 꽉 채움 ---------- */
+.plate{margin:0;height:var(--page-h);display:flex;align-items:center;justify-content:center;
+  break-before:column;break-after:column;-webkit-column-break-before:always;-webkit-column-break-after:always;break-inside:avoid}
+.plate img{max-width:100%;max-height:100%;object-fit:contain;display:block}
+.plate.hatch{border:1px dashed var(--line);border-radius:4px;align-items:center;justify-content:center;color:var(--muted);padding:0;box-sizing:border-box}
+
+/* ---------- 누르는 영역 (컴퓨터) ---------- */
+.book-hit{position:absolute;top:0;bottom:0;width:50%;border:0;background:none;padding:0;cursor:pointer;z-index:2}
+.book-hit.prev{left:0;cursor:w-resize}
+.book-hit.next{right:0;cursor:e-resize}
+.book-hit:focus-visible{outline:2px solid var(--accent);outline-offset:-4px}
+
+/* ---------- 아래 조작 막대 ---------- */
+.book-ctrl{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:12px}
+.book-ctrl button{border:1px solid var(--line);background:var(--surface);width:44px;height:40px;border-radius:4px;font-size:18px;line-height:1}
+.book-ctrl button:disabled{opacity:.35;cursor:default}
+.book-count{font-family:var(--f-mono);font-size:13px;color:var(--muted);min-width:7em;text-align:center;font-variant-numeric:tabular-nums}
+.book-progress{height:2px;background:var(--line);margin-top:10px;border-radius:2px;overflow:hidden}
+.book-progress span{display:block;height:100%;background:var(--accent);width:0;transition:width .35s ease}
+
+@media (prefers-reduced-motion:reduce){.book-flow,.book-progress span{transition:none}}
