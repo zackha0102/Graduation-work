@@ -25,7 +25,7 @@
         <a href="index.html"><span class="main"><span class="ko">홈</span><span class="en">Home</span></span><span class="sub"><span class="ko">의념</span><span class="en">Album</span></span></a>
         <a href="webtoon.html"><span class="main"><span class="ko">사건 기록</span><span class="en">Case Files</span></span><span class="sub"><span class="ko">웹툰, 소설</span><span class="en">Webtoon, Novel</span></span></a>
         <a href="staff.html"><span class="main"><span class="ko">임직원 소개</span><span class="en">Our People</span></span><span class="sub"><span class="ko">캐릭터</span><span class="en">Characters</span></span></a>
-        <a href="store.html"><span class="main"><span class="ko">전시물</span><span class="en">Exhibits</span></span><span class="sub">&nbsp;</span></a>
+        <a href="store.html"><span class="main"><span class="ko">웹툰 외</span><span class="en">Beyond</span></span><span class="sub">&nbsp;</span></a>
         <a href="guest.html" aria-current="page"><span class="main"><span class="ko">그 외</span><span class="en">More</span></span><span class="sub">&nbsp;</span></a>
     </nav>
     <div class="tools">
@@ -43,68 +43,133 @@
       <h2><span class="ko">그 외</span><span class="en">More</span></h2>
     </div>
 
-    <!-- 축전 -->
+    <!-- 함께 졸업하는 작가들 -->
     <div class="section-label">
-      <h2><span class="ko">축전</span><span class="en">Guest Art</span></h2>
-      <span class="mono"><span class="ko">그림을 누르면 작가님의 웹툰으로 갈 수 있어요</span><span class="en">Tap a piece to visit the artist's webtoon</span></span>
+      <h2><span class="ko">함께 졸업하는 작가들</span><span class="en">Fellow graduates</span></h2>
+      <span class="mono"><span class="ko">누르면 작품 소개를 볼 수 있어요</span><span class="en">Tap to read more</span></span>
     </div>
-    <div class="guests">
-      <!-- ===== 축전 1 =====
-           그림: images/guest/guest01.jpg  /  아래 4군데(그림 2곳, 이름·작품·링크)를 고치면 됩니다 -->
-      <button class="guest" type="button" data-open="gs-1">
-        <img class="img" src="images/guest/guest01.jpg" alt="GUEST 01" loading="lazy">
-        <span class="artist">백합_AJIN / 최아진</span>
-        <span class="work">바라를 위하여</span>
+    <div class="artists">
+      <!-- ===== 작가 1: 이 게임은 계속 운영합니다 ===== -->
+      <button class="artist-card" type="button" data-open="ar-1">
+        <span class="mono genre">판타지</span>
+        <span class="work">이 게임은 계속 운영합니다</span>
+        <span class="by">RRTR / 김민채</span>
+        <span class="mono more"><span class="ko">자세히</span><span class="en">More</span> →</span>
       </button>
-      <template id="gs-1">
-        <div class="detail-guest">
-          <img class="img" src="images/guest/guest01.jpg" alt="GUEST 01">
-          <div><h3>백합_AJIN / 최아진</h3><p>바라를 위하여</p></div>
+      <template id="ar-1">
+        <div class="detail-artist">
+          <span class="mono genre">판타지</span>
+          <h3>이 게임은 계속 운영합니다</h3>
+          <p class="by">RRTR / 김민채</p>
+          <h4><span class="ko">작품 설명</span><span class="en">About the work</span></h4><p>서비스 종료를 앞둔 판타지 RPG 게임. NPC인 미리엘은 몸이 굳어가는 위기 속에서 자신이 게임 속 존재라는 사실과 세계의 진실을 알게 되고 과거로 돌아간다. 살기 위해 게임의 재흥행을 목표로 새로운 파트너와 함께 나아가지만, 또 다른 시스템 사용자의 등장으로 예상치 못한 갈등에 휘말린다. 과연 미리엘은 서비스 종료를 막고 자신만의 미래를 지켜낼 수 있을까?</p>
+          <h4><span class="ko">작가 소개</span><span class="en">About the artist</span></h4><p>판타지와 일상물 장르를 좋아하며, 밝고 화려한 색감을 활용한 그림을 주로 그립니다. 이야기나 캐릭터들의 설정, 소품이나 디자인 요소등 사소한 디테일을 더하는 것을 좋아합니다.</p>
+          <a class="btn" href="https://www.sillawebtoon.kr/%EA%B9%80%EB%AF%BC%EC%B1%84" target="_blank" rel="noopener"><span class="ko">작품 보러 가기</span><span class="en">View their work</span> →</a>
+        </div>
+      </template>
+      <!-- ===== 작가 2: 감정수집 ===== -->
+      <button class="artist-card" type="button" data-open="ar-2">
+        <span class="mono genre">서스펜스 성장물</span>
+        <span class="work">감정수집</span>
+        <span class="by">이하쟁 / 서영인</span>
+        <span class="mono more"><span class="ko">자세히</span><span class="en">More</span> →</span>
+      </button>
+      <template id="ar-2">
+        <div class="detail-artist">
+          <span class="mono genre">서스펜스 성장물</span>
+          <h3>감정수집</h3>
+          <p class="by">이하쟁 / 서영인</p>
+          <h4><span class="ko">작품 설명</span><span class="en">About the work</span></h4><p>평범한 사람이라면 쉽게 표현할 수 있는 &#x27;감정&#x27;, 하지만 평범하지 않은 주인공 &quot;매라&quot;</p><p>그런 매라에게 감정을 얻을 수 있는 능력이 생겼다. 진실한 가족의 사랑을 표현하지 못했기에 늦게나마 진정한 마음을 배워가는 성장 웹툰이다.</p>
+          <h4><span class="ko">작가 소개</span><span class="en">About the artist</span></h4><p>가장 중요시 여기는 것은 나의 캐릭터들에게 서사를 만들어 그 서사에 감정을 담아 작품을 만드는 것을 중요시하며 선호합니다. 인과관계, 수미상관 등 서로서로 얽힌 설정으로 독자들에게 짜릿함을 주고자 작품을 만들어갑니다.</p>
+          <a class="btn" href="https://www.sillawebtoon.kr/%EC%84%9C%EC%98%81%EC%9D%B8" target="_blank" rel="noopener"><span class="ko">작품 보러 가기</span><span class="en">View their work</span> →</a>
+        </div>
+      </template>
+      <!-- ===== 작가 3: 보이는데도 ===== -->
+      <button class="artist-card" type="button" data-open="ar-3">
+        <span class="mono genre">로맨스</span>
+        <span class="work">보이는데도</span>
+        <span class="by">밤초 / 여수연</span>
+        <span class="mono more"><span class="ko">자세히</span><span class="en">More</span> →</span>
+      </button>
+      <template id="ar-3">
+        <div class="detail-artist">
+          <span class="mono genre">로맨스</span>
+          <h3>보이는데도</h3>
+          <p class="by">밤초 / 여수연</p>
+          <h4><span class="ko">작품 설명</span><span class="en">About the work</span></h4><p>타인의 감정을 슬라임의 형태로 볼 수 있는 고등학생 &#x27;서유진&#x27;. 어느 날 색이 없는 투명한 슬라임을 가진 전학생 &#x27;신재혁&#x27;을 만나 처음으로 읽을 수 없는 마음과 마주한다. 이후 같은 능력을 지닌 &#x27;류서준&#x27;의 등장으로 혼란을 겪으며, 감정을 보는 것과 진심으로 이해하는 것은 다르다는 사실을 깨닫는다. 보이지 않는 마음을 믿는 법을 배워가는 청춘 성장 판타지.</p>
+          <h4><span class="ko">작가 소개</span><span class="en">About the artist</span></h4><p>사람의 마음과 관계 속에서 피어나는 다양한 감정에 관심을 가지고 이야기를 그립니다. 인물의 섬세한 감정선과 자연스러운 관계의 변화를 중요하게 생각하며, 독자들이 이야기에 공감하고 오래도록 여운을 느낄 수 있는 작품을 만들고자 합니다.</p>
+          <a class="btn" href="https://www.sillawebtoon.kr/%EC%97%AC%EC%88%98%EC%97%B0" target="_blank" rel="noopener"><span class="ko">작품 보러 가기</span><span class="en">View their work</span> →</a>
+        </div>
+      </template>
+      <!-- ===== 작가 4: 슈룹과 우산 ===== -->
+      <button class="artist-card" type="button" data-open="ar-4">
+        <span class="mono genre">일상</span>
+        <span class="work">슈룹과 우산</span>
+        <span class="by">눈풀꽃 / 진성경</span>
+        <span class="mono more"><span class="ko">자세히</span><span class="en">More</span> →</span>
+      </button>
+      <template id="ar-4">
+        <div class="detail-artist">
+          <span class="mono genre">일상</span>
+          <h3>슈룹과 우산</h3>
+          <p class="by">눈풀꽃 / 진성경</p>
+          <h4><span class="ko">작품 설명</span><span class="en">About the work</span></h4><p>수면을 부르는 정령 잔트만의 우산을 들고 다니는 과묵한 사람, 슈룹. 현세와 꿈의 공간을 자유로이 노닐며 두 공간에서 보는 다양한 풍경과 여러가지를 감상하고 다닌다. 때로는 낯선 꿈속 안을 거닐고, 때로는 익숙한 현실에 머무르며 자신만의 하루를 보낸다. 특별할 것 없는 순간마저 자기만의 색으로 물들이는, 잔잔하고 조금 신비로운 일상을 보내는 이야기이다.</p>
+          <h4><span class="ko">작가 소개</span><span class="en">About the artist</span></h4><p>일상과 현대, 판타지가 어우러지는 퓨전 장르를 좋아합니다. 익숙한 풍경 속에 작은 비현실과 신비로움을 더하는 이야기에 관심이 많습니다. 현실과 비현실의 경계를 넘나드는 독특한 세계관을 바탕으로, 편안한 여운과 즐거움을 전할 수 있는 잔잔한 이야기를 만들고자 합니다.</p>
+          <a class="btn" href="https://www.sillawebtoon.kr/%EC%A7%84%EC%84%B1%EA%B2%BD" target="_blank" rel="noopener"><span class="ko">작품 보러 가기</span><span class="en">View their work</span> →</a>
+        </div>
+      </template>
+      <!-- ===== 작가 5: 바라를 위하여 ===== -->
+      <button class="artist-card" type="button" data-open="ar-5">
+        <span class="mono genre">BL</span>
+        <span class="work">바라를 위하여</span>
+        <span class="by">백합_AJIN / 최아진</span>
+        <span class="mono more"><span class="ko">자세히</span><span class="en">More</span> →</span>
+      </button>
+      <template id="ar-5">
+        <div class="detail-artist">
+          <span class="mono genre">BL</span>
+          <h3>바라를 위하여</h3>
+          <p class="by">백합_AJIN / 최아진</p>
+          <h4><span class="ko">작품 설명</span><span class="en">About the work</span></h4><p>숙부의 농간으로 인해 오명을 뒤집어 쓴 채 죽음을 맞이해야 했던 이정현, 그런 그의 앞에 나타난 신은 모종의 거래를 통해 살려줌과 동시에 그를 악을 품은 자들을 물리치는 등불로서 살아가게 한다.</p><p>그러던 어느날, 어린 이무기와 운명처럼 마주하게 되고 의도치 않은 동행을 하며 잔잔해져가던 그의 삶에는 다시금 거대한 바람을 마주하게 된다.</p>
+          <h4><span class="ko">작가 소개</span><span class="en">About the artist</span></h4><p>끊임없이 삶에 대해 질문을 던지는 작품을 만들고자 합니다. 그 질문의 끝이 좋을 거라 장담할 수는 없습니다. 그럼에도 후회 한 점 없기를, 마침내 맺고 말 결말을 품어내기를 바랍니다.</p>
           <a class="btn" href="https://www.sillawebtoon.kr/%EC%B5%9C%EC%95%84%EC%A7%84" target="_blank" rel="noopener"><span class="ko">작품 보러 가기</span><span class="en">View their work</span> →</a>
         </div>
       </template>
-      <!-- ===== 축전 2 =====
-           그림: images/guest/guest02.jpg  /  아래 4군데(그림 2곳, 이름·작품·링크)를 고치면 됩니다 -->
-      <button class="guest" type="button" data-open="gs-2">
-        <img class="img" src="images/guest/guest02.jpg" alt="GUEST 02" loading="lazy">
-        <span class="artist">이하쟁 / 서영인</span>
-        <span class="work">감정수집</span>
+      <!-- ===== 작가 6: 코드네임 : EOD ===== -->
+      <button class="artist-card" type="button" data-open="ar-6">
+        <span class="mono genre">액션</span>
+        <span class="work">코드네임 : EOD</span>
+        <span class="by">초로로 / 최유은</span>
+        <span class="mono more"><span class="ko">자세히</span><span class="en">More</span> →</span>
       </button>
-      <template id="gs-2">
-        <div class="detail-guest">
-          <img class="img" src="images/guest/guest02.jpg" alt="GUEST 02">
-          <div><h3>이하쟁 / 서영인</h3><p>감정수집</p></div>
-          <a class="btn" href="https://www.sillawebtoon.kr/%EC%84%9C%EC%98%81%EC%9D%B8" target="_blank" rel="noopener"><span class="ko">작품 보러 가기</span><span class="en">View their work</span> →</a>
+      <template id="ar-6">
+        <div class="detail-artist">
+          <span class="mono genre">액션</span>
+          <h3>코드네임 : EOD</h3>
+          <p class="by">초로로 / 최유은</p>
+          <h4><span class="ko">작품 설명</span><span class="en">About the work</span></h4><p>AI 시대, 과거 지하철 대폭발과 같은 수법의 연쇄 폭발이 일어난다. 정보는 빠르지만 부정확한 디지털 기술 수사과와, 정확하지만 느린 동물 수사과가 앙숙 관계를 딛고 합동 수사에 나선다. 폭탄 조직에 잠입한 여주와 남주는 사건 뒤에 숨은 진실에 다가간다. AI는 선한가, 악한가를 묻는 액션 수사극이다.</p>
+          <h4><span class="ko">작가 소개</span><span class="en">About the artist</span></h4><p>수사물과 액션 장르를 좋아하며, 개성 있는 캐릭터들의 협력과 갈등을 통해 시대의 질문을 담아 관객이 즐기면서 한 번쯤 생각해 볼 수 있는 작품을 추구하는 작가입니다.</p>
+          <a class="btn" href="https://www.sillawebtoon.kr/%EC%B5%9C%EC%9C%A0%EC%9D%80" target="_blank" rel="noopener"><span class="ko">작품 보러 가기</span><span class="en">View their work</span> →</a>
+        </div>
+      </template>
+      <!-- ===== 작가 7: 날의기억 ===== -->
+      <button class="artist-card" type="button" data-open="ar-7">
+        <span class="mono genre">GL</span>
+        <span class="work">날의기억</span>
+        <span class="by">최지혜</span>
+        <span class="mono more"><span class="ko">자세히</span><span class="en">More</span> →</span>
+      </button>
+      <template id="ar-7">
+        <div class="detail-artist">
+          <span class="mono genre">GL</span>
+          <h3>날의기억</h3>
+          <p class="by">최지혜</p>
+          <h4><span class="ko">작품 설명</span><span class="en">About the work</span></h4><p>어릴 적부터 귀신을 보며 평범한 일상만을 위해 노력하는 소녀 &#x27;하나린&#x27;. 우연찮게 옆집으로 이사오게 된 소녀인 &#x27;유미나&#x27;를 만나게 된다, 지극히 초면부터 자신을 안다는 이야기에 질리는데, 평범한 일상만을 위해 살아가려 귀신을 보는 것을 적당히 숨기며 살아가려던 것이 들통나며 생기는 로맨스/GL 웹툰이다.</p>
+          <h4><span class="ko">작가 소개</span><span class="en">About the artist</span></h4><p>현실과 몽상을 뒤섞은 이야기를 만들고 있습니다. 지극히 현실적인 순간과 그렇지 않은 순간을 뒤섞어 이야기에 즐거움을 뒤섞어 확장된 이야기와 스토리가 있는 작품을 제공하고자 합니다.</p>
+          <a class="btn" href="https://www.sillawebtoon.kr/%EC%B5%9C%EC%A7%80%ED%98%9C" target="_blank" rel="noopener"><span class="ko">작품 보러 가기</span><span class="en">View their work</span> →</a>
         </div>
       </template>
     </div>
 
-    <!-- 타임랩스 -->
-    <div class="section-label timelapse-label">
-      <h2><span class="ko">작업 과정</span><span class="en">Process</span></h2>
-      <span class="mono"><span class="ko">작업 순서와 타임랩스</span><span class="en">Steps and timelapses</span></span>
-    </div>
-    <div class="timelapses">
-      <figure class="timelapse">
-        <button class="steps-open" type="button" data-open="tl-1">
-          <img src="images/timelapse/ep0-cover-3.jpg" alt="Step by step" loading="lazy">
-          <span class="mono steps-tag"><span class="ko">단계 3장 보기</span><span class="en">View 3 steps</span> →</span>
-        </button>
-        <figcaption><span class="ko">작업 순서</span><span class="en">Step by step</span></figcaption>
-      </figure>
-      <template id="tl-1">
-        <h3><span class="ko">작업 순서</span><span class="en">Step by step</span></h3>
-        <div class="setgrid steps" style="--n:3">
-            <figure><img class="img" src="images/timelapse/ep0-cover-1.jpg" alt="Rough"><figcaption><span class="ko">1. 러프</span><span class="en">1. Rough</span></figcaption></figure>
-            <figure><img class="img" src="images/timelapse/ep0-cover-2.jpg" alt="Line art"><figcaption><span class="ko">2. 선화</span><span class="en">2. Line art</span></figcaption></figure>
-            <figure><img class="img" src="images/timelapse/ep0-cover-3.jpg" alt="Final"><figcaption><span class="ko">3. 완성</span><span class="en">3. Final</span></figcaption></figure>
-        </div>
-      </template>
-      <figure class="timelapse">
-        <video src="images/timelapse/ep3-cover.mp4" poster="images/timelapse/ep3-cover-poster.jpg" muted loop playsinline controls preload="none"></video>
-        <figcaption><span class="ko">타임랩스</span><span class="en">Timelapse</span></figcaption>
-      </figure>
-    </div>
 
   </div>
 </main>
@@ -124,7 +189,7 @@
         <a href="index.html"><span class="main"><span class="ko">홈</span><span class="en">Home</span></span><span class="sub"><span class="ko">의념</span><span class="en">Album</span></span></a>
         <a href="webtoon.html"><span class="main"><span class="ko">사건 기록</span><span class="en">Case Files</span></span><span class="sub"><span class="ko">웹툰, 소설</span><span class="en">Webtoon, Novel</span></span></a>
         <a href="staff.html"><span class="main"><span class="ko">임직원 소개</span><span class="en">Our People</span></span><span class="sub"><span class="ko">캐릭터</span><span class="en">Characters</span></span></a>
-        <a href="store.html"><span class="main"><span class="ko">전시물</span><span class="en">Exhibits</span></span><span class="sub">&nbsp;</span></a>
+        <a href="store.html"><span class="main"><span class="ko">웹툰 외</span><span class="en">Beyond</span></span><span class="sub">&nbsp;</span></a>
         <a href="guest.html" aria-current="page"><span class="main"><span class="ko">그 외</span><span class="en">More</span></span><span class="sub">&nbsp;</span></a>
 </nav>
 

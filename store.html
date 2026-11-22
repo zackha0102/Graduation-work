@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>전시물 · 의념</title>
+  <title>웹툰 외 · 의념</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Gowun+Batang:wght@400;700&family=Nanum+Myeongjo:wght@700;800&display=swap">
@@ -25,7 +25,7 @@
         <a href="index.html"><span class="main"><span class="ko">홈</span><span class="en">Home</span></span><span class="sub"><span class="ko">의념</span><span class="en">Album</span></span></a>
         <a href="webtoon.html"><span class="main"><span class="ko">사건 기록</span><span class="en">Case Files</span></span><span class="sub"><span class="ko">웹툰, 소설</span><span class="en">Webtoon, Novel</span></span></a>
         <a href="staff.html"><span class="main"><span class="ko">임직원 소개</span><span class="en">Our People</span></span><span class="sub"><span class="ko">캐릭터</span><span class="en">Characters</span></span></a>
-        <a href="store.html" aria-current="page"><span class="main"><span class="ko">전시물</span><span class="en">Exhibits</span></span><span class="sub">&nbsp;</span></a>
+        <a href="store.html" aria-current="page"><span class="main"><span class="ko">웹툰 외</span><span class="en">Beyond</span></span><span class="sub">&nbsp;</span></a>
         <a href="guest.html"><span class="main"><span class="ko">그 외</span><span class="en">More</span></span><span class="sub">&nbsp;</span></a>
     </nav>
     <div class="tools">
@@ -39,9 +39,13 @@
   <div class="wrap">
 
     <div class="page-head">
-      <span class="mono eyebrow">EXHIBITS</span>
-      <h2><span class="ko">전시물</span><span class="en">Exhibits</span></h2>
-      <p><span class="ko">전시장에서 만날 수 있는 굿즈와 전시물입니다.</span><span class="en">Goods and pieces you can find at the venue.</span></p>
+      <span class="mono eyebrow">BEYOND THE WEBTOON</span>
+      <h2><span class="ko">웹툰 외</span><span class="en">Beyond the Webtoon</span></h2>
+      <p><span class="ko">전시장에서 만날 수 있는 굿즈와 전시물, 그리고 작업 과정입니다.</span><span class="en">Goods and pieces at the venue, and how the work was made.</span></p>
+    </div>
+
+    <div class="section-label">
+      <h2><span class="ko">굿즈와 전시물</span><span class="en">Goods and pieces</span></h2>
     </div>
 
     <div class="items">
@@ -140,6 +144,33 @@
       </template>
     </div>
 
+    <!-- 타임랩스 -->
+    <div class="section-label timelapse-label">
+      <h2><span class="ko">작업 과정</span><span class="en">Process</span></h2>
+      <span class="mono"><span class="ko">작업 순서와 타임랩스</span><span class="en">Steps and timelapses</span></span>
+    </div>
+    <div class="timelapses">
+      <figure class="timelapse">
+        <button class="steps-open" type="button" data-open="tl-1">
+          <img src="images/timelapse/ep0-cover-3.jpg" alt="Step by step" loading="lazy">
+          <span class="mono steps-tag"><span class="ko">단계 3장 보기</span><span class="en">View 3 steps</span> →</span>
+        </button>
+        <figcaption><span class="ko">작업 순서</span><span class="en">Step by step</span></figcaption>
+      </figure>
+      <template id="tl-1">
+        <h3><span class="ko">작업 순서</span><span class="en">Step by step</span></h3>
+        <div class="setgrid steps" style="--n:3">
+            <figure><img class="img" src="images/timelapse/ep0-cover-1.jpg" alt="Rough"><figcaption><span class="ko">1. 러프</span><span class="en">1. Rough</span></figcaption></figure>
+            <figure><img class="img" src="images/timelapse/ep0-cover-2.jpg" alt="Line art"><figcaption><span class="ko">2. 선화</span><span class="en">2. Line art</span></figcaption></figure>
+            <figure><img class="img" src="images/timelapse/ep0-cover-3.jpg" alt="Final"><figcaption><span class="ko">3. 완성</span><span class="en">3. Final</span></figcaption></figure>
+        </div>
+      </template>
+      <figure class="timelapse">
+        <video src="images/timelapse/ep3-cover.mp4" poster="images/timelapse/ep3-cover-poster.jpg" muted loop playsinline controls preload="none"></video>
+        <figcaption><span class="ko">타임랩스</span><span class="en">Timelapse</span></figcaption>
+      </figure>
+    </div>
+
   </div>
 </main>
 
@@ -158,14 +189,14 @@
         <a href="index.html"><span class="main"><span class="ko">홈</span><span class="en">Home</span></span><span class="sub"><span class="ko">의념</span><span class="en">Album</span></span></a>
         <a href="webtoon.html"><span class="main"><span class="ko">사건 기록</span><span class="en">Case Files</span></span><span class="sub"><span class="ko">웹툰, 소설</span><span class="en">Webtoon, Novel</span></span></a>
         <a href="staff.html"><span class="main"><span class="ko">임직원 소개</span><span class="en">Our People</span></span><span class="sub"><span class="ko">캐릭터</span><span class="en">Characters</span></span></a>
-        <a href="store.html" aria-current="page"><span class="main"><span class="ko">전시물</span><span class="en">Exhibits</span></span><span class="sub">&nbsp;</span></a>
+        <a href="store.html" aria-current="page"><span class="main"><span class="ko">웹툰 외</span><span class="en">Beyond</span></span><span class="sub">&nbsp;</span></a>
         <a href="guest.html"><span class="main"><span class="ko">그 외</span><span class="en">More</span></span><span class="sub">&nbsp;</span></a>
 </nav>
 
 <!-- 팝업 창 틀 (내용은 각 항목의 <template>에서 가져옴) -->
 <div class="modal" id="popup" hidden role="dialog" aria-modal="true">
   <div class="modal-box wide">
-    <div class="modal-head"><span class="logo"><svg class="disc-icon"><use href="#ring"/></svg>EXHIBITS</span><button class="x" type="button"><span class="ko">닫기</span><span class="en">Close</span></button></div>
+    <div class="modal-head"><span class="logo"><svg class="disc-icon"><use href="#ring"/></svg>BEYOND</span><button class="x" type="button"><span class="ko">닫기</span><span class="en">Close</span></button></div>
     <div class="modal-body"></div>
   </div>
 </div>
