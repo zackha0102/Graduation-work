@@ -1,7 +1,5 @@
 /* =========================================================
    VEREN 《의념》 — 공통 동작
-   (다크모드, 한/영 전환, 팝업 창, 스포일러 안내)
-   보통은 이 파일을 고칠 필요가 없습니다.
    ========================================================= */
 
 function save(key, value){ try { localStorage.setItem(key, value); } catch(e){} }
@@ -17,9 +15,7 @@ document.querySelectorAll("[data-lang-toggle]").forEach(function(btn){
   });
 });
 
-/* ---------- 팝업 창 ----------
-   data-open="상세내용id" 가 붙은 버튼을 누르면,
-   그 id를 가진 <template> 안의 내용이 팝업으로 뜹니다. */
+/* ---------- 팝업 창 ----------*/
 var modal = document.getElementById("popup");
 function closePopup(){ if (modal) modal.hidden = true; }
 document.querySelectorAll("[data-open]").forEach(function(btn){
@@ -44,7 +40,7 @@ if (modal){
    "11월 25일 공개" 안내만 뜨고 페이지로 넘어가지 않습니다.
    공개하는 날 true 를 false 로 바꾸기만 하면 바로 열립니다.
    ========================================================= */
-var LOCKED = true;
+var LOCKED = false;
 
 /* 작가 미리보기: 주소 뒤에 ?preview=on 을 붙여 한 번 열면
    그 브라우저에서만 잠금이 풀립니다. ?preview=off 로 다시 잠깁니다. */
